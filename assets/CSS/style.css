@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #22d4fd;
+  --secondary-color: #f6f6f6;
+  --third-color: #000;
+  --fourth-color: #272727;
+
+  --principal-font: "Krona One", sans-serif, serif;
+  --secondary-font: "Montserrat", sans-serif, serif;
+}
+
+body {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+}
+
+.header {
+  padding: 3% 15% 0 15%;
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.header__menu__navigation {
+  font-family: var(--secondary-font);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.container {
+  padding: 8% 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 82px;
+}
+
+.container__content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.container__content__title {
+  font-size: 2.25rem;
+  font-family: var(--principal-font);
+}
+
+.container__content__paragraph {
+  font-size: 1.125rem;
+  text-align: justify;
+  font-family: var(--secondary-font);
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+.container__content__navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.container__content__navigation_title {
+  font-family: var(--principal-font);
+  font-size: 1.5rem;
+}
+
+.container__content__navigation__buttons {
+  display: flex;
+  column-gap: 3.125rem;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation__div__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  border: 0.125rem solid var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  width: 50%;
+  padding: 1.348rem 0;
+  text-align: center;
+}
+
+.navigation__div__link:hover {
+  background-color: var(--fourth-color);
+}
+
+.container__principal__img {
+  width: 35%;
+  border-radius: 0.625rem;
+  box-shadow: var(--primary-color) 0.625rem -0.625rem;
+}
+
+.container__content__navigation__logos {
+  width: 2rem;
+  height: 2rem;
+  box-shadow: none;
+  margin-right: 3%;
+}
+
+.footer__first___page {
+  padding: 24px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.footer__first__principal__text {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .container__content {
+    width: auto;
+  }
+}
